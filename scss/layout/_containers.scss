@@ -110,6 +110,35 @@ section.join {
 
 section.social-media {
   @include block($section-heigth, $social-background);
+  .updates {
+    @extend %centered;
+    input {
+      padding : 0;
+      border :0;
+      height : 43px;
+      width : 246px;
+      font-size : 15px;
+      border : none;
+
+    }
+    button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #39f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    height : 43px;
+    width : 246px;
+    border : none;
+    }
+    padding-top : 200px;
+    margin-left : auto;
+    margin-right : auto;
+  }
 
 }
 
