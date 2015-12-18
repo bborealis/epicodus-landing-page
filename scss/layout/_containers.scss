@@ -1,7 +1,6 @@
 //main image
 
 .image-gradient-dynamic {
-
   line-height: 0;
   position: relative;
   width: 100%;
@@ -15,21 +14,21 @@
   }
 
   .copy {
+    @extend %centered;
     @include transform(translate(-50%, -50%));
     left: 50%;
     margin: auto;
     position: absolute;
-    text-align: center;
     top: 50%;
     z-index: 999;
 
     p {
+      @extend %uppercase;
       color: white;
       line-height: 1.5em;
       padding: 1em 2em;
       position: relative;
       font-size: 60px;
-      text-transform: uppercase;
     }
   }
 
@@ -53,6 +52,9 @@ section.testimonials {
   }
   .third {
     @include span-columns(4)
+  }
+  h2 {
+    @extend %uppercase;
   }
   p {
     font-style: italic;

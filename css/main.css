@@ -27,7 +27,6 @@ p, h1, h2, h3, li {
     left: 50%;
     margin: auto;
     position: absolute;
-    text-align: center;
     top: 50%;
     z-index: 999; }
     .image-gradient-dynamic .copy p {
@@ -35,8 +34,7 @@ p, h1, h2, h3, li {
       line-height: 1.5em;
       padding: 1em 2em;
       position: relative;
-      font-size: 60px;
-      text-transform: uppercase; }
+      font-size: 60px; }
   .image-gradient-dynamic .overlay {
     display: block;
     position: absolute;
@@ -147,6 +145,12 @@ footer {
     color: white;
     margin-top: 0;
     margin-bottom: 0; }
+
+.image-gradient-dynamic .copy {
+  text-align: center; }
+
+.image-gradient-dynamic .copy p, section.testimonials h2 {
+  text-transform: uppercase; }
 
 header.navigation {
   background-color: white;
