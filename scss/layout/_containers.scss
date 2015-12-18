@@ -1,1 +1,49 @@
-//navigation
+//testimonials
+section.testimonials {
+  @include outer-container;
+  .first {
+    @include span-columns(4)
+  }
+  .second {
+    @include span-columns(4)
+  }
+  .third {
+    @include span-columns(4)
+  }
+  width : $testimonials-width;
+  background : white;
+}
+
+section.join {
+  @include outer-container;
+  .students {
+    @include span-columns(6);
+  }
+  .employers {
+    @include span-columns(6);
+  }
+  background : white;
+
+}
+
+
+//social media
+
+section.social-media {
+  height : $section-heigth;
+  background : $social-background;
+}
+
+//footer
+footer {
+  p {
+    color : white;
+    margin-top : 0;
+    margin-bottom : 0;
+  }
+  height : $section-heigth;
+  background : $footer-background;
+  text-align:center;
+  vertical-align: middle;
+  line-height : $section-heigth;
+}

@@ -5,6 +5,77 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+section.testimonials {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background: white; }
+  section.testimonials::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.testimonials .first {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.testimonials .first:last-child {
+      margin-right: 0; }
+  section.testimonials .second {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.testimonials .second:last-child {
+      margin-right: 0; }
+  section.testimonials .third {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.testimonials .third:last-child {
+      margin-right: 0; }
+
+section.join {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background: white; }
+  section.join::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.join .students {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    section.join .students:last-child {
+      margin-right: 0; }
+  section.join .employers {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    section.join .employers:last-child {
+      margin-right: 0; }
+
+section.social-media {
+  height: 375px;
+  background: #333; }
+
+footer {
+  height: 375px;
+  background: #000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 375px; }
+  footer p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0; }
+
 header.navigation {
   background-color: white;
   border-bottom: 1px solid #e6e6e6;
@@ -231,5 +302,54 @@ header.navigation {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           display: block; } }
+
+.image-gradient-dynamic {
+  line-height: 0;
+  position: relative;
+  width: 100%; }
+  .image-gradient-dynamic img {
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%; }
+  .image-gradient-dynamic .copy {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 999; }
+    .image-gradient-dynamic .copy p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative; }
+  .image-gradient-dynamic .overlay {
+    background-color: rgba(255, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(-270deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+    background-image: linear-gradient(0deg,rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .image-gradient-dynamic .overlay:after {
+      background-color: rgba(0, 128, 128, 0.2);
+      background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+      background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      content: '';
+      display: block; }
 
 /*# sourceMappingURL=main.css.map */
