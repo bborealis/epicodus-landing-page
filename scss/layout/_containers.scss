@@ -43,6 +43,7 @@
 
 //testimonials
 section.testimonials {
+  @include section-padding;
   @include outer-container;
   .first {
     @include span-columns(4)
@@ -62,7 +63,7 @@ section.testimonials {
 }
 // student and employer section
 section.join {
-
+  @include section-padding;
   @include outer-container;
   .students {
     @include span-columns(6);
@@ -70,8 +71,35 @@ section.join {
   .employers {
     @include span-columns(6);
   }
+  h1 {
+    text-align: center;
+    color : #3a53a4;
+  }
   p {
     line-height: 27px;
+    height : 175px;
+  }
+  img {
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    width : 100%;
+    padding : 20px;
+  }
+  button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #2eccc6;;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display : block;
+  margin-left : auto;
+  margin-right : auto;
+  border : none;
   }
 
 }

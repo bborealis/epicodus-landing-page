@@ -47,6 +47,8 @@ p, h1, h2, h3, li {
     background: rgba(0, 0, 0, 0.5); }
 
 section.testimonials {
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -81,6 +83,8 @@ section.testimonials {
     line-height: 27px; }
 
 section.join {
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -102,8 +106,32 @@ section.join {
     width: 48.82117%; }
     section.join .employers:last-child {
       margin-right: 0; }
+  section.join h1 {
+    text-align: center;
+    color: #3a53a4; }
   section.join p {
-    line-height: 27px; }
+    line-height: 27px;
+    height: 175px; }
+  section.join img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20px; }
+  section.join button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #2eccc6;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; }
 
 section.social-media {
   height: 375px;

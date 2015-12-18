@@ -3,3 +3,8 @@
   height : $block-heigth;
   background : $block-background;
 }
+
+@mixin section-padding($top : null, $bottom : null) {
+  padding-top : $padding;
+  padding-bottom : $padding;
+}
