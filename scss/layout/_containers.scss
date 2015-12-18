@@ -1,3 +1,46 @@
+//main image
+
+.image-gradient-dynamic {
+
+  line-height: 0;
+  position: relative;
+  width: 100%;
+
+  img {
+   height: auto;
+   left: 0;
+   position: relative;
+   top: 0;
+   width: 100%;
+  }
+
+  .copy {
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 999;
+
+    p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative;
+      font-size: 60px;
+      text-transform: uppercase;
+    }
+  }
+
+  .overlay {
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+
 //testimonials
 section.testimonials {
   @include outer-container;
@@ -10,11 +53,16 @@ section.testimonials {
   .third {
     @include span-columns(4)
   }
+  p {
+    font-style: italic;
+    line-height: 27px;
+  }
   width : $testimonials-width;
-  background : white;
-}
 
+}
+// student and employer section
 section.join {
+
   @include outer-container;
   .students {
     @include span-columns(6);
@@ -22,27 +70,27 @@ section.join {
   .employers {
     @include span-columns(6);
   }
-  background : white;
+  p {
+    line-height: 27px;
+  }
 
 }
-
 
 //social media
 
 section.social-media {
-  height : $section-heigth;
-  background : $social-background;
+  @include block($section-heigth, $social-background);
+
 }
 
 //footer
 footer {
+  @include block($section-heigth, $footer-background);
   p {
     color : white;
     margin-top : 0;
     margin-bottom : 0;
   }
-  height : $section-heigth;
-  background : $footer-background;
   text-align:center;
   vertical-align: middle;
   line-height : $section-heigth;
